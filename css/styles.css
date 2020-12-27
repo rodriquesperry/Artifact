@@ -1,26 +1,9 @@
 
-body {
-  /* background-color: #f4f4f2; */
-
-}
-
 .navbar {
   box-shadow: 0 0.2rem 0.5rem rgba(83, 131, 179, 0.3);
   background: #f8f9fa;
 
 }
-
-.wrapper {
-  display: flex;
-}
-
-
-
-.card {
-  box-shadow: 0 0.2rem 0.5rem rgba(83, 131, 179, 0.3);
-  margin: 0 1rem 1.5rem;
-}
-
 
 #sidenav .nav-item {
   display: flex;
@@ -51,6 +34,11 @@ body {
   margin: 45px auto 45px;
 }
 
+.card {
+  box-shadow: 0 0.2rem 0.5rem rgba(83, 131, 179, 0.3);
+  margin: 0 1rem 1.5rem;
+}
+
 .icon-bar {
   display: flex;
   flex-flow: row;
@@ -72,12 +60,10 @@ body {
 @media screen and (min-width: 992px) {
   .container-main {
     padding-left: 8rem;
-    /* padding-right: 3rem; */
   }
 
   .container-sidenav {
     height: 100vh;
-    /* max-width: 135px; */
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
