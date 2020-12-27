@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <!-- Footer Nav -->
+<!-- Bottom Nav -->
   <div class="footerNavbar icon-bar fixed-bottom d-lg-none">
     <a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
       <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
@@ -26,12 +26,12 @@
       <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
     </svg>
     </a>
-    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+    <a href="#" role="button" data-toggle="modal" data-target="#bottomAddModal"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
     </svg>
     </a>
-    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-hourglass-top" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M2 14.5a.5.5 0 0 0 .5.5h11a.5.5 0 1 0 0-1h-1v-1a4.5 4.5 0 0 0-2.557-4.06c-.29-.139-.443-.377-.443-.59v-.7c0-.213.154-.451.443-.59A4.5 4.5 0 0 0 12.5 3V2h1a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1h1v1a4.5 4.5 0 0 0 2.557 4.06c.29.139.443.377.443.59v.7c0 .213-.154.451-.443.59A4.5 4.5 0 0 0 3.5 13v1h-1a.5.5 0 0 0-.5.5zm2.5-.5v-1a3.5 3.5 0 0 1 1.989-3.158c.533-.256 1.011-.79 1.011-1.491v-.702s.18.101.5.101.5-.1.5-.1v.7c0 .701.478 1.236 1.011 1.492A3.5 3.5 0 0 1 11.5 13v1h-7z"/>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+      <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
     </svg>
     </a>
     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -40,9 +40,41 @@
     </svg>
     </a>
   </div>
-  <!-- End Footer Nav -->
-  <!-- Top Nav -->
-  <nav class="navbar">
+  <!-- Bottom Add Modal -->
+  <div id="bottomAddModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title">Build</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+          <div class="container-fluid">
+            <div class="modal-body mt-5">
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                </div>
+              </div>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Create a Task</button>
+                </div>
+              </div>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Build a Team</button>
+                </div>
+              </div>
+            </div>
+          </div>       
+      </div>
+    </div>
+  </div>
+  <!-- End Bottom Add Modal -->
+<!-- End Bottom Nav -->
+
+<!-- Top Nav -->
+  <nav class="navbar sticky-top">
     <a class="navbar-brand" href="#">Artifact</a>
     <span class="navbar-text ml-auto">
       <a href="" role="button" data-toggle="modal" data-target="#loginModal">
@@ -50,7 +82,7 @@
       </a>
     </span>
   </nav>
-  
+  <!-- Log In Modal -->
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -87,11 +119,10 @@
       </div>
     </div>
   </div>
-  <!-- End Top Nav -->
+  <!-- End Log In Modal -->
+<!-- End Top Nav -->
 
-
-<!-- Main Container  -->
-  <!-- Side Nav -->
+<!-- Side Nav -->
   <div class="wrapper">
     <div class="container-sidenav">
       <div id="sidenav" class="row">
@@ -114,17 +145,17 @@
               </a>  
             </li>
             <li class="nav-item">
-              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+              <a href="#" role="button" data-toggle="modal" data-target="#sideAddModal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
               </svg>
               Add
               </a>  
             </li>
             <li class="nav-item">
-              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hourglass-top" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 14.5a.5.5 0 0 0 .5.5h11a.5.5 0 1 0 0-1h-1v-1a4.5 4.5 0 0 0-2.557-4.06c-.29-.139-.443-.377-.443-.59v-.7c0-.213.154-.451.443-.59A4.5 4.5 0 0 0 12.5 3V2h1a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1h1v1a4.5 4.5 0 0 0 2.557 4.06c.29.139.443.377.443.59v.7c0 .213-.154.451-.443.59A4.5 4.5 0 0 0 3.5 13v1h-1a.5.5 0 0 0-.5.5zm2.5-.5v-1a3.5 3.5 0 0 1 1.989-3.158c.533-.256 1.011-.79 1.011-1.491v-.702s.18.101.5.101.5-.1.5-.1v.7c0 .701.478 1.236 1.011 1.492A3.5 3.5 0 0 1 11.5 13v1h-7z"/>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+                <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
               </svg>
-              Time
+              Kanban
               </a>  
             </li>
             <li class="nav-item">
@@ -139,100 +170,126 @@
         </div>
       </div>
     </div>
-  <!-- End Side Nav -->
 
-  <!-- Main Container -->
-  <div class="container container-main">
-    <div class="row justify-content-center">
-  <!-- Nav Pills -->
+  <!-- Side Add Modal -->
+  <div id="sideAddModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title">Build</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+          <div class="container-fluid">
+            <div class="modal-body mt-5">
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                </div>
+              </div>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Create a Task</button>
+                </div>
+              </div>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Build a Team</button>
+                </div>
+              </div>
+            </div>
+          </div>       
+      </div>
+    </div>
+  </div>
+  <!-- End Side Add Modal -->
+<!-- End Side Nav -->
 
-        <!-- <div class="col-lg-11 col-xl-10">
-          <nav class="nav-item nav nav-pills nav-fill" id="pills-tab">
-            <a class="nav-item nav-link active" id="pills-teams-tab" data-toggle="pill" href="#pills-teams" role="tab" aria-controls="pills-teams" aria-selected="true">Teams</a>
-            <a class="nav-item nav-link" id="pills-projects-tab" data-toggle="pill" href="#pills-projects" role="tab" aria-controls="pills-projects" aria-selected="true">Projects</a>
-            <a class="nav-item nav-link" id="pills-tasks-tab" data-toggle="pill" href="#pills-tasks" role="tab" aria-controls="pills-tasks" aria-selected="true">Tasks</a>
-          </nav>
-        </div> -->
-  <!-- End Nav Pills -->     
+<!-- Main Container -->
+  <div class="container container-main dashboard">
+    <div class="row justify-content-center">   
   <!-- Content Area  -->
-        <div class="container main">
+        <div class="container">
           <div class="row align-items-center">
-            <!-- Cards -->
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Projects</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/work.html" class="card-link">Active Projects</a>
+            <div class="col-lg-11 col-xl-12">
+              <div class="row">
+    <!-- Cards -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Projects</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/work.html" class="card-link">Active Projects</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Progress</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">This Week</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Progress</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">This Week</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Progress</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Last Week</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Progress</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Last Week</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Time</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day. Look into how to do graphs for bootstrap or another plugin</p>
-                  <a href="/work.html" class="card-link">Active Projects</a>
+                <div class="col-sm-12 col-md-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Time</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day. Look into how to do graphs for bootstrap or another plugin</p>
+                      <a href="/work.html" class="card-link">Active Projects</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Latest Notes/MSG/DMs</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Decide what MSGs you are going to put here.</p>
-                  <a href="/work.html" class="card-link">Active Projects</a>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Latest Notes/MSG/DMs</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Decide what MSGs you are going to put here.</p>
+                      <a href="/work.html" class="card-link">Active Projects</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Kanban Link</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Show latest Kanban and have as a link to get to kanban page</p>
-                  <a href="/work.html" class="card-link">Active Projects</a>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Kanban Link</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Show latest Kanban and have as a link to get to kanban page</p>
+                      <a href="/work.html" class="card-link">Active Projects</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Milestones</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
-                  <p class="card-text">Scheduled Milestones</p>
-                  <a href="/work.html" class="card-link">Active Projects</a>
+                <div class="col-sm-12 col-md-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Milestones</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
+                      <p class="card-text">Scheduled Milestones</p>
+                      <a href="/work.html" class="card-link">Active Projects</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            <!-- End Cards -->
+              </div>              
+  <!-- End Cards -->
           </div>
         </div>
   <!-- End Content Area -->
+      </div>
     </div>
   </div>
-  </div>
-  <!-- End Main Container -->
+<!-- End Main Container -->
 
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
