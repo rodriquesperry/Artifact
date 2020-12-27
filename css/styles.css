@@ -20,22 +20,21 @@
     color: #03506f;
 }
 
-.pills {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50px;
-    z-index: 9999;
+.page-header {
+    margin: 1.5rem 0 2rem;
+    box-shadow: 0 0.9rem 0.9rem #82878b41;
+
 }
 
 .nav-pills {
     background-color: #e8e8e8;
     border-radius: 7px;
-    margin: 45px auto 45px;
+    margin: 0 auto 45px;
 }
 
 .card {
     box-shadow: 0 0.2rem 0.5rem rgba(83, 131, 179, 0.3);
-    margin: 0 1rem 1.5rem;
+    margin: 0 0 1.5rem;
 }
 
 .icon-bar {
@@ -62,6 +61,8 @@
     .container-sidenav {
         height: 100vh;
         overflow-y: scroll;
+        top: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
         position: fixed;

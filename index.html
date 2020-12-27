@@ -2,306 +2,313 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <!-- Additional CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Artifact Project Management App</title>
+  <title>Artifact Project Management App</title>
 </head>
 
 <body>
 
-    <!-- Bottom Nav -->
-    <div class="footerNavbar icon-bar fixed-bottom d-lg-none">
-        <a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-      <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
-      <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-    </svg>
+  <!-- Bottom Nav -->
+  <div class="footerNavbar icon-bar fixed-bottom d-lg-none">
+    <a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+      </svg>
     </a>
-        <a href="/work.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
-      <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
-    </svg>
+    <a href="/work.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+        <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z" />
+      </svg>
     </a>
-        <a href="#" role="button" data-toggle="modal" data-target="#bottomAddModal"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-    </svg>
+    <a href="#" role="button" data-toggle="modal" data-target="#bottomAddModal"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+      </svg>
     </a>
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
-      <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
-    </svg>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+        <path
+          d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+      </svg>
     </a>
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
-          <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-    </svg>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+      </svg>
     </a>
-    </div>
-    <!-- Bottom Add Modal -->
-    <div id="bottomAddModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h3 class="modal-title">Build</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="container-fluid">
-                    <div class="modal-body mt-5">
-                        <div class="row ml-auto">
-                            <div class="col d-flex justify-content-center mb-3">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
-                            </div>
-                        </div>
-                        <div class="row ml-auto">
-                            <div class="col d-flex justify-content-center mb-3">
-                                <button type="button" class="btn btn-primary">Create a Task</button>
-                            </div>
-                        </div>
-                        <div class="row ml-auto">
-                            <div class="col d-flex justify-content-center mb-3">
-                                <button type="button" class="btn btn-primary">Build a Team</button>
-                            </div>
-                        </div>
-                        <div class="row ml-auto">
-                            <div class="col d-flex justify-content-center mb-3">
-                                <button type="button" class="btn btn-primary">Add a File</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
+  <!-- Bottom Add Modal -->
+  <div id="bottomAddModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title">Build</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
+        <div class="container-fluid">
+          <div class="modal-body mt-5">
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary">Create a Task</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary">Build a Team</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary">Add a File</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Bottom Add Modal -->
-    <!-- End Bottom Nav -->
+  </div>
+  <!-- End Bottom Add Modal -->
+  <!-- End Bottom Nav -->
 
-    <!-- Top Nav -->
-    <nav class="navbar sticky-top">
-        <a class="navbar-brand" href="#">Artifact</a>
-        <span class="navbar-text ml-auto">
+  <!-- Top Nav -->
+  <nav class="navbar sticky-top">
+    <a class="navbar-brand" href="#">Artifact</a>
+    <span class="navbar-text ml-auto">
       <a href="" role="button" data-toggle="modal" data-target="#loginModal">
         <i class="fa fa-sign-in"></i> Login
       </a>
     </span>
-    </nav>
-    <!-- Log In Modal -->
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label for="loginEmail" class="sr-only">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword=">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label">Remember me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  </nav>
+  <!-- Log In Modal -->
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title">Login</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label for="loginEmail" class="sr-only">Email address</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginPassword=">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Log In Modal -->
-    <!-- End Top Nav -->
+  </div>
+  <!-- End Log In Modal -->
+  <!-- End Top Nav -->
 
-    <!-- Side Nav -->
-    <div class="wrapper">
-        <div class="container-sidenav">
-            <div id="sidenav" class="row">
-                <div class="col-1 flex-column">
-                    <ul class="nav flex-column d-none d-md-none d-lg-block d-xl-block sticky-top">
-                        <li class="nav-item">
-                            <a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
-                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <!-- Side Nav -->
+  <div class="container-sidenav">
+    <div id="sidenav" class="row">
+      <div class="col-1 flex-column">
+        <ul class="nav flex-column d-none d-md-none d-lg-block d-xl-block sticky-top">
+          <li class="nav-item">
+            <a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
               </svg>
               Home
-              </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/work.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
-                <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/work.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                <path fill-rule="evenodd"
+                  d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z" />
               </svg>
               Work
-              </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" role="button" data-toggle="modal" data-target="#sideAddModal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" role="button" data-toggle="modal" data-target="#sideAddModal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
               </svg>
               Add
-              </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
-                <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
               </svg>
               Kanban
-              </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
-                              <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
               </svg>
               Chat
-              </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Side Add Modal -->
-        <div id="sideAddModal" class="modal fade" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
-                        <h3 class="modal-title">Build</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="modal-body mt-5">
-                            <div class="row ml-auto">
-                                <div class="col d-flex justify-content-center mb-3">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
-                                </div>
-                            </div>
-                            <div class="row ml-auto">
-                                <div class="col d-flex justify-content-center mb-3">
-                                    <button type="button" class="btn btn-primary">Create a Task</button>
-                                </div>
-                            </div>
-                            <div class="row ml-auto">
-                                <div class="col d-flex justify-content-center mb-3">
-                                    <button type="button" class="btn btn-primary">Build a Team</button>
-                                </div>
-                            </div>
-                            <div class="row ml-auto">
-                                <div class="col d-flex justify-content-center mb-3">
-                                    <button type="button" class="btn btn-primary">Add a File</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Side Add Modal -->
-        <!-- End Side Nav -->
-
-        <!-- Main Container -->
-        <div class="container container-main dashboard">
-            <div class="row justify-content-center">
-                <!-- Content Area  -->
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-11 col-xl-12">
-                            <div class="row">
-                                <!-- Cards -->
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card" id="projects">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Projects</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                            <p class="card-text">Number of Projects.</p>
-                                            <a href="/work.html" class="card-link">Active Projects</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card">
-                                        <div class="card-body" id="currentProgress">
-                                            <h5 class="card-title">Progress</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">This Week</h6>
-                                            <p class="card-text">Current Progress (percentage) towards Projects.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card">
-                                        <div class="card-body" id="previousProgress">
-                                            <h5 class="card-title">Progress</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Last Week</h6>
-                                            <p class="card-text">Percentage of progress worked in previous week.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-8">
-                                    <div class="card">
-                                        <div class="card-body" id="timeGraph">
-                                            <h5 class="card-title">Time</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                            <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day of the month.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="card">
-                                        <div class="card-body" id="notes">
-                                            <h5 class="card-title">Latest Notes/MSG/DMs</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                            <p class="card-text">Decide what MSGs you are going to put here.</p>
-                                            <a href="/work.html" class="card-link">Notes</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Activity</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                            <p class="card-text">Show latest activity by user</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-8">
-                                    <div class="card">
-                                        <div class="card-body" id="milestones">
-                                            <h5 class="card-title">Milestones</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
-                                            <p class="card-text">Scheduled Milestones</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Cards -->
-                        </div>
-                    </div>
-                    <!-- End Content Area -->
-                </div>
-            </div>
-        </div>
-        <!-- End Main Container -->
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Side Add Modal -->
+  <div id="sideAddModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title">Build</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container-fluid">
+          <div class="modal-body mt-5">
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary">Create a Task</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary">Build a Team</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary">Add a File</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Side Add Modal -->
+  <!-- End Side Nav -->
+
+  <!-- Main Container -->
+  <div class="container container-main dashboard">
+    <div class="row justify-content-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-11 col-xl-12">
+            <div>
+              <div class="col page-header">
+                <h1>Dashboard</h1>
+              </div>
+            </div>
+            <!-- Cards -->
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card" id="projects">
+                  <div class="card-body">
+                    <h5 class="card-title">Projects</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Number of Projects.</p>
+                    <a href="/work.html" class="card-link">Active Projects</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                  <div class="card-body" id="currentProgress">
+                    <h5 class="card-title">Progress</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">This Week</h6>
+                    <p class="card-text">Current Progress (percentage) towards Projects.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                  <div class="card-body" id="previousProgress">
+                    <h5 class="card-title">Progress</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Last Week</h6>
+                    <p class="card-text">Percentage of progress worked in previous week.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-8">
+                <div class="card">
+                  <div class="card-body" id="timeGraph">
+                    <h5 class="card-title">Time</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day of the month.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="card">
+                  <div class="card-body" id="notes">
+                    <h5 class="card-title">Latest Notes/MSG/DMs</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Decide what MSGs you are going to put here.</p>
+                    <a href="/work.html" class="card-link">Notes</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Activity</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Show latest activity by user</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-8">
+                <div class="card">
+                  <div class="card-body" id="milestones">
+                    <h5 class="card-title">Milestones</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
+                    <p class="card-text">Scheduled Milestones</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Container -->
+
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
