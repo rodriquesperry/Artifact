@@ -16,14 +16,15 @@
 
 <body>
 
+
   <!-- Bottom Nav -->
   <div class="footerNavbar icon-bar fixed-bottom d-lg-none">
-    <a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
         <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
         <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
       </svg>
     </a>
-    <a href="/work.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+    <a class="active" href="/work.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
         <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z" />
       </svg>
@@ -32,7 +33,7 @@
         <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
       </svg>
     </a>
-    <a href="kanban.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
         <path
           d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
       </svg>
@@ -179,124 +180,143 @@
       </div>
     </div>
   </div>
-  <!-- Side Add Modal -->
-  <div id="sideAddModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h3 class="modal-title">Build</h3>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="container-fluid">
-          <div class="modal-body mt-5">
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+    <!-- Side Add Modal -->
+    <div id="sideAddModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h3 class="modal-title">Build</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="container-fluid">
+            <div class="modal-body mt-5">
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                </div>
               </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Create a Task</button>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Create a Task</button>
+                </div>
               </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Build a Team</button>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Build a Team</button>
+                </div>
               </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Add a File</button>
+              <div class="row ml-auto">
+                <div class="col d-flex justify-content-center mb-3">
+                  <button type="button" class="btn btn-primary">Add a File</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Side Add Modal -->
-  <!-- End Side Nav -->
+    <!-- End Side Add Modal -->
+    <!-- End Side Nav -->
 
-  <!-- Main Container -->
-  <div class="container container-main dashboard">
-    <div class="row justify-content-center">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-11 col-xl-12">
-            <div>
-              <div class="col page-header">
-                <h1>Dashboard</h1>
+    <!-- Main Container -->
+    <div class="container container-main">
+      <div class="row justify-content-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-11 col-xl-12">
+              <div>
+                <div class="col page-header">
+                  <h1>Kanban Board</h1>
+                </div>
               </div>
+              <div class="container-kanban">
+                <div class="project-name">
+                  <h2>Project Name</h2>
+                </div>
+                <div class="kboard">
+                    <div class="canvas">
+                      <h4 class="canvasTitle">To Do</h4>
+                      <div class="canvasList">
+                        <div class="card kcard">
+                          <div class="card-title">Task 1</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div>             
+                        <div class="card kcard">
+                          <div class="card-title">Task 2</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div>             
+                        <div class="card kcard">
+                          <div class="card-title">Task 3</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div> 
+                      </div> 
+                      <div class="canvas-footer">Add Task</div>
+                    </div>                
+                    <div class="canvas">
+                      <h4 class="canvasTitle">In Progress</h4>
+                      <div class="canvasList">
+                        <div class="card kcard">
+                          <div class="card-title">Task 1</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div>             
+                        <div class="card kcard">
+                          <div class="card-title">Task 2</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div>             
+                        <div class="card kcard">
+                          <div class="card-title">Task 3</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div> 
+                      </div> 
+                      <div class="canvas-footer">Add Task</div>
+                    </div>                
+                    <div class="canvas">
+                      <h4 class="canvasTitle">Done</h4>
+                      <div class="canvasList">
+                        <div class="card kcard">
+                          <div class="card-title">Task 1</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div>             
+                        <div class="card kcard">
+                          <div class="card-title">Task 2</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div>             
+                        <div class="card kcard">
+                          <div class="card-title">Task 3</div>
+                          <div class="card-body">
+                            <p>This is where text about the task goes.</p>
+                          </div>
+                        </div> 
+                      </div> 
+                      <div class="canvas-footer">Add Task</div>
+                    </div>                               
+                    <div class="addCanvas">
+                      <button class="btn btn-lg btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-node-plus" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025zM11 5a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 11 5zM1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                      </svg> Add Sticky</button>
+                                   
+                    </div>                
+                </div>
+                </div>
+
+
             </div>
-            <!-- Cards -->
-            <div class="row">
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card" id="projects">
-                  <div class="card-body">
-                    <h5 class="card-title">Projects</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Number of Projects.</p>
-                    <a href="/work.html" class="card-link">Active Projects</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card">
-                  <div class="card-body" id="currentProgress">
-                    <h5 class="card-title">Progress</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">This Week</h6>
-                    <p class="card-text">Current Progress (percentage) towards Projects.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card">
-                  <div class="card-body" id="previousProgress">
-                    <h5 class="card-title">Progress</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Last Week</h6>
-                    <p class="card-text">Percentage of progress worked in previous week.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <div class="card">
-                  <div class="card-body" id="timeGraph">
-                    <h5 class="card-title">Time</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day of the month.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-4">
-                <div class="card">
-                  <div class="card-body" id="notes">
-                    <h5 class="card-title">Latest Notes/MSG/DMs</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Decide what MSGs you are going to put here.</p>
-                    <a href="/work.html" class="card-link">Notes</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Activity</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Show latest activity by user</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <div class="card">
-                  <div class="card-body" id="milestones">
-                    <h5 class="card-title">Milestones</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
-                    <p class="card-text">Scheduled Milestones</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Cards -->
           </div>
         </div>
       </div>
