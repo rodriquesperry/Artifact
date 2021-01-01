@@ -3,13 +3,17 @@
     background: #f8f9fa;
 }
 
+#sidenav {
+    margin-top: 60px;
+
+}
+
 #sidenav .nav-item {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 50px 0 20px 50px;
+    padding: 25px 50px;
     letter-spacing: 3px;
-    margin-top: 50px;
 }
 
 #sidenav .nav-item a {
@@ -33,9 +37,10 @@
 }
 
 .card {
-    box-shadow: 0 0.2rem 0.5rem rgba(83, 131, 179, 0.3);
+    box-shadow: 0 0.2rem 0.5rem rgba(83, 131, 179, 0.9);
     margin: 0 0 1.5rem;
 }
+
 
 .icon-bar {
     display: flex;
@@ -58,11 +63,26 @@
     text-align: center;
 }
 
-
-.container-kanban {
+#workTabContent {
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 3rem);
+}
+
+.tasksTab {
+    margin: auto;
+}
+
+.tasks-tab-header {
+    margin: 2rem 0 1rem;
+}
+
+.tasks-tab-card {
+    padding: 1rem 1rem 0;
+    margin: 1rem;
+}
+
+.bi-grip-vertical {
+    margin: 0 .5rem;
 }
 
 .container-kanban {
@@ -70,6 +90,7 @@
     flex-direction: column;
     height: auto;
     overflow-y: hidden;
+    max-height: calc(100vh - 3rem);
 }
 
 .kboard {
@@ -86,7 +107,7 @@
 
 .canvas {
     height: 100%;
-    max-height: 25rem;
+    max-height: 30rem;
     min-width: 300px;
     margin: 1rem;
     padding: 1%;
@@ -100,15 +121,24 @@
 
 .canvasTitle {
     text-align: center;
-    /* color: #fff; */
     text-decoration: underline;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem;
     top: 0;
 }
 
 .canvasList {
     position: relative;
     overflow-y: scroll;
+}
+
+.kcard {
+    border: 1px solid rgba(64, 109, 139, 0.479);
+    display: block;
+    flex-direction: column;
+}
+
+.kcard-title {
+    margin-left: 1rem;
 }
 
 .addCanvas {
