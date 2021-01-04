@@ -76,9 +76,14 @@
     margin: 2rem 0 1rem;
 }
 
+
 .tasks-tab-card {
-    padding: 1rem 1rem 0;
+    padding: 1rem 0rem 0;
     margin: 1rem;
+}
+
+.complete {
+    text-decoration: line-through;
 }
 
 .bi-grip-vertical {
@@ -102,7 +107,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     height: 100%;
-    background-color: rgba(83, 131, 179, 0.02);
+    background-color: rgba(83, 131, 179, 0.07);
+    border-radius: 3%;
 }
 
 .canvas {
