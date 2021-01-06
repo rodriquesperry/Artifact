@@ -15,4 +15,6 @@ This app is created for a portfolio project for the @nucamp Full Stack Web Devel
 * Commenting/ Notes<br>
 
 ### Languages
-The front-end is mostly created utilizing Bootstrap v4.5.<br> Other languages will be added as I progress through the course.
+* Bootstrap <br>
+* jQuery<br>
+* SCSS/Sass<br>

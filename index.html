@@ -48,29 +48,24 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
-          <h3 class="modal-title">Build</h3>
+          <h3 class="modal-title">Build Something</h3>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="container-fluid">
           <div class="modal-body mt-5">
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                <button type="button" class="btn btn-primary createProj" data-dismiss="modal">Create a Project</button>
+              </div>
+            </div>
+            <div class="row ml-auto">
+              <div class="col d-flex justify-content-center mb-3" data-dismiss="modal">
+                <button type="button" class="btn btn-primary createTeam" data-dismiss="modal">Build a Team</button>
               </div>
             </div>
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Create a Task</button>
-              </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Build a Team</button>
-              </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Add a File</button>
+                <button type="button" class="btn btn-primary addFile" data-dismiss="modal">Add a File</button>
               </div>
             </div>
           </div>
@@ -184,29 +179,24 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
-          <h3 class="modal-title">Build</h3>
+          <h3 class="modal-title">Build Something</h3>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="container-fluid">
           <div class="modal-body mt-5">
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                <button type="button" class="btn btn-primary createProj" data-dismiss="modal">Create a Project</button>
               </div>
             </div>
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Create a Task</button>
+                <button type="button" class="btn btn-primary createTeam" data-dismiss="modal">Build a Team</button>
               </div>
             </div>
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Build a Team</button>
-              </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Add a File</button>
+                <button type="button" class="btn btn-primary addFile" data-dismiss="modal">Add a File</button>
               </div>
             </div>
           </div>
@@ -235,7 +225,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Projects</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Number of Projects.</p>
+                    <p class="card-text">Number of Projects assigned to a user.</p>
                     <a href="/work.html" class="card-link">Active Projects</a>
                   </div>
                 </div>
@@ -305,7 +295,8 @@
   <!-- End Main Container -->
 
 
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>

@@ -9,6 +9,7 @@
 
   <!-- Additional CSS -->
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 
   <title>Artifact Project Management App</title>
@@ -49,29 +50,24 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
-          <h3 class="modal-title">Build</h3>
+          <h3 class="modal-title">Build Something</h3>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="container-fluid">
           <div class="modal-body mt-5">
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                <button type="button" class="btn btn-primary createProj" data-dismiss="modal">Create a Project</button>
               </div>
             </div>
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Create a Task</button>
+                <button type="button" class="btn btn-primary createTeam" data-dismiss="modal">Build a Team</button>
               </div>
             </div>
             <div class="row ml-auto">
               <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Build a Team</button>
-              </div>
-            </div>
-            <div class="row ml-auto">
-              <div class="col d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-primary">Add a File</button>
+                <button type="button" class="btn btn-primary addFile" data-dismiss="modal">Add a File</button>
               </div>
             </div>
           </div>
@@ -185,29 +181,24 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header bg-primary text-white">
-            <h3 class="modal-title">Build</h3>
+            <h3 class="modal-title">Build Something</h3>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="container-fluid">
             <div class="modal-body mt-5">
               <div class="row ml-auto">
                 <div class="col d-flex justify-content-center mb-3">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Create a Project</button>
+                  <button type="button" class="btn btn-primary createProj" data-dismiss="modal">Create a Project</button>
                 </div>
               </div>
               <div class="row ml-auto">
                 <div class="col d-flex justify-content-center mb-3">
-                  <button type="button" class="btn btn-primary">Create a Task</button>
+                  <button type="button" class="btn btn-primary createTeam" data-dismiss="modal">Build a Team</button>
                 </div>
               </div>
               <div class="row ml-auto">
                 <div class="col d-flex justify-content-center mb-3">
-                  <button type="button" class="btn btn-primary">Build a Team</button>
-                </div>
-              </div>
-              <div class="row ml-auto">
-                <div class="col d-flex justify-content-center mb-3">
-                  <button type="button" class="btn btn-primary">Add a File</button>
+                  <button type="button" class="btn btn-primary addFile" data-dismiss="modal">Add a File</button>    
                 </div>
               </div>
             </div>
@@ -233,107 +224,99 @@
               <div class="row">
                 <div class="col-lg-12">
                   <nav class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-                    <a class="nav-link active" id="pills-teams-tab" data-toggle="pill" href="#pills-teams" role="tab" aria-controls="pills-teams" aria-selected="true">Teams</a>
-                    <a class="nav-link" id="pills-projects-tab" data-toggle="pill" href="#pills-projects" role="tab" aria-controls="pills-projects" aria-selected="true">Projects</a>
+                    <a class="nav-link active" id="pills-projects-tab" data-toggle="pill" href="#pills-projects" role="tab" aria-controls="pills-projects" aria-selected="true">Projects</a>
+                    <a class="nav-link" id="pills-teams-tab" data-toggle="pill" href="#pills-teams" role="tab" aria-controls="pills-teams" aria-selected="true">Teams</a>
                     <a class="nav-link" id="pills-tasks-tab" data-toggle="pill" href="#pills-tasks" role="tab" aria-controls="pills-tasks" aria-selected="true">Tasks</a>
-                    <a class="nav-link" id="pills-files-tab" data-toggle="pill" href="#pills-files" role="tab" aria-controls="pills-files" aria-selected="true">Files</a>
+                    <!-- <a class="nav-link" id="pills-files-tab" data-toggle="pill" href="#pills-files" role="tab" aria-controls="pills-files" aria-selected="true">Files</a> -->
                   </nav>
                 </div>
               </div>
-                <!-- End Nav Pills Nav -->
-                <!-- Tab Content -->
-                <!-- Teams -->
+              <!-- End Nav Pills Nav -->
+              <!-- Tab Content -->
               <div class="tab-content" id="workTabContent">
-                <div class="tab-content show active" id="workTabContent">
-                  <div role="tabpanel" class="tab-pane fade show active" id="pills-teams" aria-labelledby="pills-teams">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Teams</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Teams</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Teams</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Teams -->
+                <div class="tab-content " id="workTabContent">
                   <!-- Projects -->
-                  <div role="tabpanel" class="tab-pane fade" id="pills-projects" aria-labelledby="pills-projects">
+                  <div role="tabpanel" class="tab-pane fade show active" id="pills-projects" aria-labelledby="pills-projects">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="card">
+                        <div class="card dCard">
                           <div class="card-body">
                             <h5 class="card-title">Project Name</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text">These are the cards that will be generated from the Create a project button. A brief description or some notes about the project will go here.</p>
+                            <a href="#" class="btn btn-primary projectBtn" title="Go to your project page. Displays team members, files and milestones for specific project.">Go somewhere</a>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="card">
+                        <div class="card dCard">
                           <div class="card-body">
                             <h5 class="card-title">Project Name</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text">A brief description or some notes about the project will go here.</p>
+                            <a href="#" class="btn btn-primary projectBtn" title="Go to your project page. Displays team members, files and milestones for specific project.">Go somewhere</a>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="card">
+                        <div class="card dCard">
                           <div class="card-body">
                             <h5 class="card-title">Project Name</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text">A brief description or some notes about the project will go here.</p>
+                            <a href="#" class="btn btn-primary projectBtn" title="Go to your project page. Displays team members, files and milestones for specific project.">Go somewhere</a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- End Projects -->
-                  <!-- Tasks -->
+                <!-- End Projects -->
+                <!-- Teams -->
+                  <div role="tabpanel" class="tab-pane fade" id="pills-teams" aria-labelledby="pills-teams">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card dCard">
+                          <div class="card-body">
+                            <h5 class="card-title">Team Name</h5>
+                            <p class="card-text">This is where the current teams you are on will be displayed. I plan on having avatar circles of team members like google.</p>
+                            <a href="#" class="btn btn-primary teamBtn" title="Go to your teams page with member directory as well as notes ability.">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card dCard">
+                          <div class="card-body">
+                            <h5 class="card-title">Team Name</h5>
+                            <p class="card-text">This is where the current teams you are on will be displayed. I plan on having avatar circles of team members like google.</p>
+                            <a href="#" class="btn btn-primary teamBtn" title="Go to your teams page with member directory as well as notes ability.">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card dCard">
+                          <div class="card-body">
+                            <h5 class="card-title">Team Name</h5>
+                            <p class="card-text">This is where the current teams you are on will be displayed. I plan on having avatar circles of team members like google.</p>
+                            <a href="#" class="btn btn-primary teamBtn" title="Go to your teams page with member directory as well as notes ability.">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- End Teams -->
+                <!-- Tasks -->
                   <div role="tabpanel" class="tab-pane fade" id="pills-tasks" aria-labelledby="pills-tasks">
                     <div class="row">
                       <div class="col-md-8 tasksTab">
-                        <label for="task-list" class="form-label d-flex" id="task-list-header"><h6>What Needs Done Today</h6></label>
+                        <label for="task-list" class="form-label d-flex" id="task-list-header"><h5>What Needs Done Today</h5></label>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control mr-3" id="taskInput" placeholder="Add Something to Do Here">
+                          <input type="text" class="form-control mr-3" id="taskInput" placeholder="Add Something to Do Here" autofocus>
                           <button type="submit" class="btn btn-success" id="addTask">+</button>
                         </div>
                         <h5 class="tasks-tab-header">Checklist</h5>
-                        <div class="card tasks-tab-card" title="Double click on task to mark complete">
-                          <div class="row taskMove">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-grip-vertical" viewBox="0 0 16 16">
-                              <path d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                            </svg>
-                          <div>
-                            <p class="taskText">Something Here</p>
-                          </div>
-                          </div>
-                        </div>                       
+                        <ul id="taskCards">
+                        </ul>                       
                       </div>
-                  <!-- End Tasks -->
+                <!-- End Tasks -->
                     </div>
-                <!-- End Tab Content -->
+              <!-- End Tab Content -->
                   </div>
                 </div>
               </div>
@@ -344,8 +327,8 @@
     </div>
     <!-- End Main Container -->
 
-
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
