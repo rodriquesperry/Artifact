@@ -253,8 +253,9 @@
                   <div class="card">
                     <div class="card-body" id="timeGraph">
                       <h5 class="card-title">Time</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day of the month.</p>
+                      <div class="chart-container">
+                        <canvas id="timeChart" width="200" height="65"></canvas>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -301,6 +302,7 @@
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="circles-master/circles.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.js"></script>
   <script src="js/index.js"></script>
 </body>
 

@@ -50,6 +50,10 @@ body {
     margin-bottom: 1.23rem;
 }
 
+.chart-container {
+    position: relative;
+}
+
 .nav-pills {
     background-color: #e8e8e8;
     border-radius: 7px;
