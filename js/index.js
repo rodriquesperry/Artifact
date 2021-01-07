@@ -86,6 +86,40 @@ $('.teamBtn').tooltip();
 $('.projectBtn').tooltip();
 $('.tasks-tab-card').tooltip();
 $('.canvasTitle').tooltip();
+$('project-name').tooltip();
+let myCircle = Circles.create({
+  id:                  'circle-thisWeek',
+  radius:              50,
+  value:               75,
+  maxValue:            100,
+  width:               5,
+  text:                function(value){return value + '%';},
+  colors:              ['#bedcfa', '#0098ef'],
+  duration:            900,
+  wrpClass:            'circles-wrp',
+  textClass:           'circles-text',
+  valueStrokeClass:    'circles-valueStroke',
+  maxValueStrokeClass: 'circles-maxValueStroke',
+  styleWrapper:        true,
+  styleText:           true
+});
+
+Circles.create({
+  id:                  'circle-lastWeek',
+  radius:              50,
+  value:               89,
+  maxValue:            100,
+  width:               5,
+  text:                function(value){return value + '%';},
+  colors:              ['#d1ffa2', '#54e346'],
+  duration:            900,
+  wrpClass:            'circles-wrp',
+  textClass:           'circles-text',
+  valueStrokeClass:    'circles-valueStroke',
+  maxValueStrokeClass: 'circles-maxValueStroke',
+  styleWrapper:        true,
+  styleText:           true
+});
 
 
 

@@ -208,84 +208,85 @@
   <!-- End Side Nav -->
 
   <!-- Main Container -->
-  <div class="container container-main dashboard">
+  <div class="container container-main">
     <div class="row justify-content-center">
-      <div class="container">
+      <div class="container dashboard">
         <div class="row align-items-center">
           <div class="col-lg-11 col-xl-12">
             <div>
               <div class="col page-header">
-                <h1>Dashboard</h1>
+                <h2>Dashboard</h2>
               </div>
             </div>
             <!-- Cards -->
             <div class="row">
               <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card" id="projects">
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Projects</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Number of Projects assigned to a user.</p>
+                    <h1 id="activeProjects">2</h1>
                     <a href="/work.html" class="card-link">Active Projects</a>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card">
-                  <div class="card-body" id="currentProgress">
-                    <h5 class="card-title">Progress</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">This Week</h6>
-                    <p class="card-text">Current Progress (percentage) towards Projects.</p>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="card">
+                    <div class="card-body text-center" id="currentProgress">
+                      <h5 class="card-title ml-2">Progress</h5>
+                      <h6 class="card-subtitle ml-2 mb-2 text-muted">This Week</h6>
+                      <div class="circle" id="circle-thisWeek">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card">
-                  <div class="card-body" id="previousProgress">
-                    <h5 class="card-title">Progress</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Last Week</h6>
-                    <p class="card-text">Percentage of progress worked in previous week.</p>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="card">
+                    <div class="card-body text-center" id="previousProgress">
+                      <h5 class="card-title ml-2">Progress</h5>
+                      <h6 class="card-subtitle ml-2 mb-2 text-muted">Last Week</h6>
+                      <div class="circle" id="circle-lastWeek">
+                      </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <div class="card">
-                  <div class="card-body" id="timeGraph">
-                    <h5 class="card-title">Time</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day of the month.</p>
+              </div>              
+                <div class="col-sm-12 col-md-8">
+                  <div class="card">
+                    <div class="card-body" id="timeGraph">
+                      <h5 class="card-title">Time</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">This is where we insert a time graph to show how much time you have put into work, on a certain day of the month.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-4">
-                <div class="card">
-                  <div class="card-body" id="notes">
-                    <h5 class="card-title">Latest Notes/MSG/DMs</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Decide what MSGs you are going to put here.</p>
-                    <a href="/work.html" class="card-link">Notes</a>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <div class="card-body" id="notes">
+                      <h5 class="card-title">Latest Notes/MSG/DMs</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Decide what MSGs you are going to put here.</p>
+                      <a href="/work.html" class="card-link">Notes</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Activity</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Show latest activity by user</p>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Activity</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Show latest activity by user</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <div class="card">
-                  <div class="card-body" id="milestones">
-                    <h5 class="card-title">Milestones</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
-                    <p class="card-text">Scheduled Milestones</p>
+                <div class="col-sm-12 col-md-8">
+                  <div class="card">
+                    <div class="card-body" id="milestones">
+                      <h5 class="card-title">Milestones</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Due & Late</h6>
+                      <p class="card-text">Scheduled Milestones</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+            </div>              
             <!-- End Cards -->
           </div>
         </div>
@@ -299,6 +300,7 @@
   <script src="/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="circles-master/circles.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 
