@@ -97,7 +97,7 @@ Circles.create({
   width:               5,
   text:                function(value){return value + '%';},
   colors:              ['#bedcfa', '#0098ef'],
-  duration:            900,
+  duration:            1500,
   wrpClass:            'circles-wrp',
   textClass:           'circles-text',
   valueStrokeClass:    'circles-valueStroke',
@@ -114,7 +114,7 @@ Circles.create({
   width:               5,
   text:                function(value){return value + '%';},
   colors:              ['#d1ffa2', '#54e346'],
-  duration:            900,
+  duration:            1500,
   wrpClass:            'circles-wrp',
   textClass:           'circles-text',
   valueStrokeClass:    'circles-valueStroke',
@@ -131,7 +131,7 @@ let timeChart = new Chart(ctx, {
       labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       datasets: [{
           label: 'hours worked',
-          data: [0, 12, 3, 5, 2, 3, 6],
+          data: [0, 12, 3, 5, 2, 3,],
           backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',

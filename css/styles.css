@@ -31,12 +31,6 @@ body {
 .dashboard {
     box-shadow: .3rem .3rem .3rem .1rem #82878b41;
     margin: 1rem 0 ;
-    /* background-color: rgba(83, 131, 179, 0.07); */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-
 }
 
 .page-header {
@@ -52,6 +46,10 @@ body {
 
 .chart-container {
     position: relative;
+}
+
+#notes {
+    display: block;
 }
 
 .nav-pills {
@@ -121,7 +119,7 @@ body {
 }
 
 .tasks-tab-card {
-    padding: 1rem 0rem 0;
+    padding: 1rem 0 0;
 }
 
 .taskText { 
@@ -177,8 +175,6 @@ body {
     flex-direction: column;
     overflow: hidden;
     background-color: rgba(83, 131, 179, 0.07);
-
-
 }
 
 .canvasTitle {
@@ -212,9 +208,32 @@ body {
 
 }
 
+.profilePic {
+    border-radius: 100%;
+}
+
+.profilePics {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+#profilePic1 {
+    position: absolute;
+}
+
+#profilePic2 {
+    position: absolute;
+    margin-left: 2.5rem;
+}
+
+#profilePic3 {
+    position: absolute;
+    margin-left: 4.5rem;
+}
+
 @media screen and (min-width: 992px) {
     .container-main {
-        padding-left: 8rem;
+        padding-left: 6rem;
         
         
     }
@@ -230,18 +249,21 @@ body {
         background: #f8f9fa;
         max-width: 8vw;
     }
+    
 }
 
 @media screen (min-width: 1200px) {
     .container-main .main {
         max-width: 1140px;
     }
+    
 }
 
 @media (min-width: 992px) {
     .container-main .main{
         max-width: 960px;
     }
+    
 }
 
 @media screen (min-width: 768px) {
@@ -257,4 +279,6 @@ body {
 
 
 }
+
+
 
